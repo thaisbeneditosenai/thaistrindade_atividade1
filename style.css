@@ -360,23 +360,29 @@ body{
 }
 
 .tab_cardapio{
-    width: 80%;
+    width: 40%;
     border-radius: 10px;
+    border-color: #000000;
+    align-items: center;
+    padding: 80px 80px 70px;
 }
 
 .preco_c{
     width: 100%;
-    background-color: #1f2854;
+    background-color: #02145c;
     text-align: left;
     font-size: 15px;
+    padding: 10px 10px;
+    border-color: #ccd0df;
+    
 }
 .preco_c th{
     background-color: #c3c3e0;
-    color: #021b7e;
-    padding: 16px 20px;
+    color: #00124e;
+    padding: 14px;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 2px solid #1a6d01;
+    border-bottom: 3px solid #edf1ec;
     text-align: center;
 }
 
@@ -386,4 +392,5 @@ body{
     color: #ffffff;
     box-shadow: #f0eded;
     text-align: center;
+    border-bottom: 3px solid #edf1ec;
 }
