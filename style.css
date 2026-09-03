@@ -1,0 +1,389 @@
+/*Formatação da minha pagina*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(25, 137, 202);
+    color: rgb(125, 161, 193);
+}
+
+.cabecalho{
+    background-color: rgb(1, 51, 79);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #183363;
+}
+
+.logo{
+    font-size: 24px;
+    color: rgb(193, 235, 242);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu a{
+    color: rgb(193, 229, 235);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: color 0.6s ease;
+}
+
+.container{
+    max-width: 1200px; /*largura max da tela*/
+    margin: 40px auto; /*margem*/
+    padding: 0 20px; /*sparação da margem*/
+}
+
+.titulo-secao{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: rgb(1, 32, 53);
+}
+
+.subtitulo{
+    color: rgb(252, 249, 249);
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grade-filmes{
+    display: grid; /*coloca em grades todos os elementos*/
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+.card-filme{
+    background-color: rgb(0, 26, 64);
+    border-radius: 10px; /*arredonda as bordas*/
+    overflow: hidden; /*esconde oq esta fora das margens*/
+    box-shadow: 0 4px 12px #d8e6f6;
+    display: flex;
+    flex-direction: column; /*muda o eixode alinhamento*/
+}
+
+.card-filme:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px #1a6d01;
+}
+
+.poster{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.conteudo-filme{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.genero{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #e3eeff;
+}
+
+.nome-filme{
+    font-size: 25px;
+    margin: 5px 0 10px 0;
+}
+
+.sinopse{
+    font-size: 14px;
+    color: #e3eeff;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.sessoes{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.horario{
+    display: inline-block;
+    background-color: antiquewhite;
+    color: #183363;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+
+.botãocomprar{
+    display: block;
+    text-align: center;
+    background-color: antiquewhite;
+    color: #183363;
+    padding: 12px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.botãocomprar:hover{
+    background-color: rgb(178, 190, 253);
+}
+
+.area-inscricao{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;/*alinha o topo de todas as colunas*/
+}
+
+.coluna-form{
+    flex: 1;/*faz um formulario crescer proporcionalmente*/
+    min-width: 320px;
+    background-color: #dceafa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #042051;
+}
+
+.coluna-midia{
+    flex: 1;/*faz um formulario crescer proporcionalmente*/
+    min-width: 320px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #dceafa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #042051;
+}
+
+.coluna-form label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #26519c;
+}
+.coluna-form input[type= "text"],
+.coluna-form input[type= "password"],
+.coluna-form input[type= "email"],
+.coluna-form input[type= "date"],
+.coluna-form select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: rgb(1, 27, 50);
+}
+
+.btn-enviar{
+    background-color: #027013;
+    color: #ffffff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-limpar{
+    background-color: #9e0707;
+    color: #ffffff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-enviar:hover{
+    background-color: #071f00;
+}
+
+.btn-limpar:hover{
+    background-color: #250000;
+}
+
+.filme{
+    background-color: #dceafa;
+    color: #042051;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #000000;
+}
+
+.preco_int{
+    background-color: #085403;
+    color: #fefeff;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    box-shadow: 3px 3px 3px #000000;
+}
+
+.preco_meia{
+    background-color: #497e04;
+    color: #fefeff;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    box-shadow: 3px 3px 3px #000000;
+}
+
+.preco_vip{
+    background-color: #949210;
+    color: #fefeff;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    box-shadow: 3px 3px 3px #000000;
+}
+
+.filme_nome{
+    background-color: #dceafa;
+    color: #042051;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    box-shadow: 3px 3px 3px #000000;
+}
+
+.titulotab_1{
+    color: #042051;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #b6c5df;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 5px 5px 5px;
+}
+.titulotab_2{
+    color: #042051;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #b6c5df;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 5px 5px 5px;
+}
+
+.tabela_1{
+    margin: 10px 400px;
+}
+
+.tabela_2{
+    margin: 10px 400px;
+}
+
+.conheca{
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+    color: #fefefe;
+    background-color: #183363;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.salac{
+    text-align: center;
+    color: #021980;
+    background-color: #c3c7db;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.salav{
+    text-align: center;
+    color: #021980;
+    background-color: #c3c7db;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.foto1{
+    background-color: rgb(5, 30, 50);
+    margin: 0px 200px 0px 300px;
+    box-shadow: 5px 5px 5px 5px #bbc3e5;
+    border-radius: 10px;
+}
+
+.foto2{
+    background-color: rgb(5, 30, 50);
+    margin: 0px 200px 0px 250px;
+    box-shadow: 5px 5px 5px 5px #bbc3e5;
+    border-radius: 10px;
+}
+
+.leg_com{
+    background-color: #bbc3e5;
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    border-color: #000000;
+    margin: 30px 200px 0px 200px;
+    text-align: center;
+    font-weight: bold;
+}
+.leg_vip{
+    background-color: #bbc3e5;
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    border-color: #000000;
+    margin: 30px 200px 35px 250px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.compre{
+    font-size: xx-large;
+    color: #042051;
+    text-align: center;
+    margin: 30px 20opx 0px 200px;
+    border-radius: 10px;
+    background-color: #d9dded;
+    font-style: oblique;
+}
+
+.subtitulo_c{
+    font-size: large;
+    color: #f4f5f7;
+    text-align: center;
+    margin: 30px 20opx 0px 200px;
+    border-radius: 10px;
+    background-color: #021b7e;
+}
+
+.tab_cardapio{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.preco_c{
+    width: 100%;
+    background-color: #1f2854;
+    text-align: left;
+    font-size: 15px;
+}
+.preco_c th{
+    background-color: #c3c3e0;
+    color: #021b7e;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #1a6d01;
+    text-align: center;
+}
+
+.preco_c td{
+    padding: 16px 20px;
+    border-bottom: #6c8bf9;
+    color: #ffffff;
+    box-shadow: #f0eded;
+    text-align: center;
+}
